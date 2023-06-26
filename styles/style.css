@@ -16,6 +16,7 @@ body, html {
 
 .tablink {
     float: right;
+    border-radius: 15px;
     border: none;
     outline: none;
     cursor: pointer;
@@ -26,4 +27,16 @@ body, html {
 .tablink:hover {
     background-color: #e0218a;
 }
-  
+
+img {
+    border-radius: 15px;
+    width: 50%;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
