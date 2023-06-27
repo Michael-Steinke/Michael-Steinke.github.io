@@ -1,39 +1,8 @@
+/* Elements */
 body, html {
     height: 100%;
     margin: 1%;
     font-size: calc(15px + 0.390625vw); /* https://matthewjamestaylor.com/responsive-font-size */
-}
-
-#header-element {
-    display: inline;
-}
-
-#footer-element {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-}
-
-.tablink {
-    float: right;
-    border-radius: 15px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    width: 10%;
-}
-
-.tablink:hover {
-    background-color: #e0218a;
-}
-
-.card {
-    background-color: gray;
-    border-radius: 15px;
-    padding: 1% 1%;
-    border-style: solid;
-    border-color: white;
 }
 
 img {
@@ -47,4 +16,47 @@ h1 {
 
 p {
     text-align: justify;
+}
+
+/* ID */
+#header-element {
+    display: inline;
+}
+
+#footer-element {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+}
+
+/* Classes */
+.tablink {
+    float: right;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    width: 10%;
+}
+
+.tablink:hover {
+    border-color: #e0218a;
+}
+
+.card {
+    background-color: gray;
+    border-radius: 15px;
+    padding: 1% 1%;
+    border-style: solid;
+    border-color: white;
+    flex-shrink: 0;
+}
+
+.card-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
 }
