@@ -28,6 +28,14 @@ body, html {
     background-color: #e0218a;
 }
 
+.card {
+    background-color: gray;
+    border-radius: 15px;
+    padding: 1% 1%;
+    border-style: solid;
+    border-color: white;
+}
+
 img {
     border-radius: 15px;
     width: 50%;
