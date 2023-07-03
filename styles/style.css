@@ -3,6 +3,7 @@ body, html {
     height: 100%;
     margin: 1%;
     font-size: calc(15px + 0.390625vw); /* https://matthewjamestaylor.com/responsive-font-size */
+    background-color: #282a36;
 }
 
 img {
@@ -12,10 +13,16 @@ img {
 
 h1 {
     text-align: center;
+    color: #ff79c6;
+}
+
+h2, h3 {
+    color: #50fa7b;
 }
 
 p {
     text-align: justify;
+    color: #f8f8f2;
 }
 
 /* ID */
@@ -45,18 +52,25 @@ p {
 }
 
 .card {
-    background-color: gray;
+    background-color: #6272a4;
     border-radius: 15px;
     padding: 1% 1%;
+    width: 66%;
     border-style: solid;
-    border-color: white;
+    border-color: #bd93f9;
     flex-shrink: 0;
+    scroll-snap-align: center;
 }
 
 .card-container {
     display: flex;
     overflow-x: auto;
+    scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     width: 100%;
+}
+
+img {
+    object-fit: cover;
 }
