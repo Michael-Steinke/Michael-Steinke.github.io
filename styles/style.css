@@ -52,18 +52,23 @@ p {
 }
 
 .card {
+    display: inline-table;
     background-color: #6272a4;
     border-radius: 15px;
     padding: 1% 1%;
-    width: 66%;
     border-style: solid;
     border-color: #bd93f9;
     flex-shrink: 0;
     scroll-snap-align: center;
 }
 
+.card h3 {
+    color:#f1fa8c;
+    text-align: center;
+}
+
 .card-container {
-    display: flex;
+    display: inline-flex;
     overflow-x: auto;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
@@ -73,4 +78,6 @@ p {
 
 img {
     object-fit: cover;
+    aspect-ratio: 2/3;
+    width: 20vw;
 }
