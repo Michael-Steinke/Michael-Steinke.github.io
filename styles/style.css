@@ -34,6 +34,11 @@ div + div {
 button {
     margin-left: 1vw;
 }
+
+span {
+    color: #ffb86c;
+}
+
 /* ID */
 #header-element {
     display: inline;
