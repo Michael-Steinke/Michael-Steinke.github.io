@@ -8,7 +8,9 @@ body, html {
 
 img {
     border-radius: 15px;
-    width: 50%;
+    object-fit: cover;
+    aspect-ratio: 2/3;
+    width: 20vw;
 }
 
 h1 {
@@ -25,6 +27,13 @@ p {
     color: #f8f8f2;
 }
 
+div + div {
+    margin-left: 1vw;
+}
+
+button {
+    margin-left: 1vw;
+}
 /* ID */
 #header-element {
     display: inline;
@@ -74,10 +83,4 @@ p {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     width: 100%;
-}
-
-img {
-    object-fit: cover;
-    aspect-ratio: 2/3;
-    width: 20vw;
 }
