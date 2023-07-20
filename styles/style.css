@@ -1,10 +1,9 @@
 /* Elements */
 body, html {
     height: 100%;
-    margin: 1%;
+    margin: 0.5%;
     font-size: calc(15px + 0.390625vw); /* https://matthewjamestaylor.com/responsive-font-size */
     background-color: #282a36;
-    padding-bottom: 10vh;
 }
 
 img {
@@ -47,11 +46,11 @@ hr {
 /* ID */
 #header-element {
     display: inline;
+    margin-left: 0.5vw;
 }
 
 #footer-element {
     position: static;
-    bottom: 0;
     left: 50%;
 }
 
@@ -67,10 +66,17 @@ hr {
     width: 100%;
 }
 
+.content {
+    min-height: 85%;
+
+}
+
 .footer {
     width: 100%;
-    height: 10vh;
+    height: 10%;
+    padding-bottom: 1%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
