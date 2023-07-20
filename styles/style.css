@@ -4,6 +4,7 @@ body, html {
     margin: 1%;
     font-size: calc(15px + 0.390625vw); /* https://matthewjamestaylor.com/responsive-font-size */
     background-color: #282a36;
+    padding-bottom: 10vh;
 }
 
 img {
@@ -39,18 +40,41 @@ span {
     color: #ffb86c;
 }
 
+hr {
+    color: #44475a; 
+}
+
 /* ID */
 #header-element {
     display: inline;
 }
 
 #footer-element {
-    position: fixed;
+    position: static;
     bottom: 0;
     left: 50%;
 }
 
+#text-card {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-bottom: 1%;
+}
+
 /* Classes */
+.header {
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .tablink {
     float: right;
     border-radius: 15px;
